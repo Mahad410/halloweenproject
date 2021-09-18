@@ -1,0 +1,129 @@
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    body {
+        background-color: #000000;
+        box-sizing: border-box;
+        /*flowers */
+        font-family: 'Fleur De Leah';
+        /*stylish
+        font-family: 'Grey Qo', cursive;*/
+        color: white;
+    }
+    
+    .svg {
+        position: relative;
+        z-index: 99;
+        margin-top: -40px;
+        animation: t_bottom 3s ease-in-out;
+        box-sizing: border-box;
+    }
+    
+    @keyframes t_bottom {
+        0% {
+            margin-top: -38px;
+        }
+        40% {
+            margin-top: -0px;
+        }
+    }
+    
+    .l_container {
+        display: inline-block;
+        width: 100%;
+    }
+    
+    .house {
+        background: url(halloween.gif);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 600px;
+        height: 600px;
+        box-sizing: border-box;
+    }
+    
+    @keyframes right {
+        0% {
+            margin-right: -700px;
+        }
+        40% {
+            margin-right: 30px;
+        }
+    }
+    
+    .intro_right {
+        width: 40%;
+        position: absolute;
+        float: right;
+        right: 50px;
+        animation: right 3.5s ease-in-out;
+    }
+    
+    .intro_left {
+        width: 40%;
+        color: white;
+        letter-spacing: 2px;
+        font-size: 32px;
+        position: absolute;
+        float: left;
+        left: 60px;
+        animation: left 3s ease-in-out;
+        overflow: hidden;
+    }
+    
+    @keyframes left {
+        0% {
+            margin-left: -700px;
+        }
+        40% {
+            margin-left: 40px;
+        }
+    }
+    
+    .pop {
+        width: 140px;
+        height: 70px;
+        background-color: wheat;
+        position: absolute;
+        transform: translate(700px, -80px);
+        border-radius: 50px;
+        border-bottom-left-radius: 3px;
+        animation: op 3s ease-in-out;
+        opacity: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    @keyframes op {
+        0% {
+            opacity: 0;
+            margin-top: -150px;
+        }
+        20% {
+            opacity: 0.5;
+            margin-top: -80;
+        }
+    }
+    
+    .pop p {
+        color: black;
+        font-size: 28px;
+        font-weight: bold;
+        font-family: 'Grey Qo';
+    }
+    
+    .intro_left h1 {
+        text-decoration: underline white;
+        text-decoration-style: double;
+    }
+    
+    .intro_left p {
+        font-size: 38px;
+    }
+    
+    .orange {
+        color: #ff5500;
+    }
