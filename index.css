@@ -328,8 +328,9 @@
         .black {
             color: #000000;
             box-sizing: border-box;
-            transform: translate(-20%, 200%);
             font-weight: bolder;
+            transform: translate(-15%, 250%);
+            font-size: 28px;
         }
         
         a {
@@ -339,3 +340,4 @@
         a:hover {
             text-decoration: underline #000000;
         }
+        /* responsive for mobile */
