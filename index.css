@@ -132,7 +132,7 @@
         h1 {
             text-decoration: underline white;
             text-decoration-style: double;
-            font-size: 52px;
+            font-size: 50px;
             letter-spacing: 2px;
         }
         
@@ -201,7 +201,7 @@
         }
         
         .spider_line {
-            width: 0.2%;
+            width: 0.3%;
             height: 25vh;
             background-color: #000000;
             margin-left: 45%;
@@ -215,7 +215,7 @@
             height: 10vh;
             box-sizing: border-box;
             margin-top: -2.5%;
-            margin-left: 42.4%;
+            margin-left: 42.5%;
             animation: spi 1s ease-in-out infinite;
             animation-delay: 1s;
         }
