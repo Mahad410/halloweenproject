@@ -303,10 +303,10 @@
             background-image: url(ouija_c.png);
             background-size: contain;
             background-repeat: no-repeat;
-            width: 15%;
-            height: 15vh;
+            width: 12%;
+            height: 12vh;
             box-sizing: border-box;
-            transform: translate(370%, 70%);
+            transform: translate(470%, 100%);
         }
         
         .contact_me {
@@ -319,16 +319,16 @@
         
         .contact_me h1 {
             color: #000000;
-            margin-top: 8%;
+            margin-top: 10%;
             margin-left: 2%;
-            font-size: 40px;
+            font-size: 30px;
             text-decoration: none;
         }
         
         .black {
             color: #000000;
             box-sizing: border-box;
-            transform: translate(-10%, 280%);
+            transform: translate(-20%, 200%);
             font-weight: bolder;
         }
         
