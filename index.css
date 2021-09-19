@@ -1,129 +1,216 @@
-    * {
-        margin: 0px;
-        padding: 0px;
-    }
-    
-    body {
-        background-color: #000000;
-        box-sizing: border-box;
-        /*flowers */
-        font-family: 'Fleur De Leah';
-        /*stylish
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        body {
+            background-color: #000000;
+            box-sizing: border-box;
+            /*flowers */
+            font-family: 'Fleur De Leah';
+            /*stylish
         font-family: 'Grey Qo', cursive;*/
-        color: white;
-    }
-    
-    .svg {
-        position: relative;
-        z-index: 99;
-        margin-top: -40px;
-        animation: t_bottom 3s ease-in-out;
-        box-sizing: border-box;
-    }
-    
-    @keyframes t_bottom {
-        0% {
-            margin-top: -38px;
+            color: white;
         }
-        40% {
-            margin-top: -0px;
+        
+        .svg {
+            position: relative;
+            z-index: 98;
+            margin-top: -40px;
+            animation: t_bottom 3s ease-in-out;
+            box-sizing: border-box;
         }
-    }
-    
-    .l_container {
-        display: inline-block;
-        width: 100%;
-    }
-    
-    .house {
-        background: url(halloween.gif);
-        background-size: cover;
-        background-repeat: no-repeat;
-        width: 600px;
-        height: 600px;
-        box-sizing: border-box;
-    }
-    
-    @keyframes right {
-        0% {
-            margin-right: -700px;
+        
+        @keyframes t_bottom {
+            0% {
+                margin-top: -38px;
+            }
+            40% {
+                margin-top: -0px;
+            }
         }
-        40% {
-            margin-right: 30px;
+        
+        .l_container {
+            position: absolute;
+            display: inline-block;
+            width: 100%;
+            height: 50vh;
+            box-sizing: border-box;
         }
-    }
-    
-    .intro_right {
-        width: 40%;
-        position: absolute;
-        float: right;
-        right: 50px;
-        animation: right 3.5s ease-in-out;
-    }
-    
-    .intro_left {
-        width: 40%;
-        color: white;
-        letter-spacing: 2px;
-        font-size: 32px;
-        position: absolute;
-        float: left;
-        left: 60px;
-        animation: left 3s ease-in-out;
-        overflow: hidden;
-    }
-    
-    @keyframes left {
-        0% {
-            margin-left: -700px;
+        
+        .house {
+            background: url(halloween3.gif);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 80vh;
+            box-sizing: border-box;
         }
-        40% {
-            margin-left: 40px;
+        
+        @keyframes right {
+            0% {
+                margin-right: -700px;
+            }
+            40% {
+                margin-right: 30px;
+            }
         }
-    }
-    
-    .pop {
-        width: 140px;
-        height: 70px;
-        background-color: wheat;
-        position: absolute;
-        transform: translate(700px, -80px);
-        border-radius: 50px;
-        border-bottom-left-radius: 3px;
-        animation: op 3s ease-in-out;
-        opacity: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    @keyframes op {
-        0% {
-            opacity: 0;
-            margin-top: -150px;
+        
+        .intro_right {
+            display: inline;
+            width: 40%;
+            float: right;
+            right: 50px;
+            animation: right 3.5s ease-in-out;
         }
-        20% {
-            opacity: 0.5;
-            margin-top: -80;
+        
+        .intro_left {
+            display: inline;
+            width: 40%;
+            color: white;
+            letter-spacing: 2px;
+            font-size: 32px;
+            float: left;
+            left: 60px;
+            animation: left 3s ease-in-out;
+            overflow: hidden;
         }
-    }
-    
-    .pop p {
-        color: black;
-        font-size: 28px;
-        font-weight: bold;
-        font-family: 'Grey Qo';
-    }
-    
-    .intro_left h1 {
-        text-decoration: underline white;
-        text-decoration-style: double;
-    }
-    
-    .intro_left p {
-        font-size: 38px;
-    }
-    
-    .orange {
-        color: #ff5500;
-    }
+        
+        @keyframes left {
+            0% {
+                margin-left: -700px;
+            }
+            40% {
+                margin-left: 40px;
+            }
+        }
+        
+        .pop {
+            width: 10%;
+            height: 10vh;
+            background-color: wheat;
+            position: absolute;
+            transform: translate(400%, -80px);
+            border-radius: 50px;
+            border-bottom-left-radius: 3px;
+            animation: op 3s ease-in-out;
+            opacity: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        @keyframes op {
+            0% {
+                opacity: 0;
+                margin-top: -150px;
+            }
+            20% {
+                opacity: 0.5;
+                margin-top: -80;
+            }
+        }
+        
+        .pop p {
+            color: black;
+            font-size: 28px;
+            font-weight: bold;
+            font-family: 'Grey Qo';
+        }
+        
+        .intro_left h1 {
+            text-decoration: underline white;
+            text-decoration-style: double;
+        }
+        
+        .intro_left p {
+            font-size: 38px;
+        }
+        
+        .orange {
+            color: #ff5500;
+        }
+        
+        .web {
+            position: absolute;
+            display: inline-block;
+            z-index: 99;
+            box-sizing: border-box;
+            width: 100%;
+        }
+        
+        .web1 {
+            background-image: url(spiderweb.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 8%;
+            height: 8vh;
+            box-sizing: border-box;
+            margin: 0.9% 0 0 -1.9%;
+            transform: rotate(270deg);
+            animation: drop 4s ease-in-out;
+            float: left;
+        }
+        
+        @keyframes drop {
+            0% {
+                margin-top: -5%;
+                opacity: 0;
+            }
+            40% {
+                margin-top: 0.8%;
+                opacity: 1;
+            }
+        }
+        
+        .web2 {
+            background-image: url(spiderweb1.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 9%;
+            height: 9vh;
+            box-sizing: border-box;
+            margin: 2.9% 0 0 0;
+            animation: drop2 4s ease-in-out;
+            float: right;
+        }
+        
+        @keyframes drop2 {
+            0% {
+                margin-top: -5%;
+                opacity: 0;
+            }
+            40% {
+                margin-top: 2.8%;
+                opacity: 1;
+            }
+        }
+        
+        .spider_line {
+            width: 0.2%;
+            height: 25vh;
+            background-color: #000000;
+            margin-left: 45%;
+        }
+        
+        .spider {
+            background-image: url(spider.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 10%;
+            height: 10vh;
+            box-sizing: border-box;
+            margin-top: -2.5%;
+            margin-left: 42.4%;
+            animation: spi 1s ease-in-out infinite;
+            animation-delay: 3.5s;
+        }
+        
+        @keyframes spi {
+            0% {
+                margin-top: -2.4%;
+            }
+            40% {
+                margin-top: -1%
+            }
+        }
