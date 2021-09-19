@@ -11,13 +11,14 @@
             /*stylish
         font-family: 'Grey Qo', cursive;*/
             color: white;
+            user-select: none;
         }
         
         .svg {
             position: relative;
             z-index: 98;
             margin-top: -40px;
-            animation: t_bottom 3s ease-in-out;
+            animation: t_bottom 1s ease-in-out;
             box-sizing: border-box;
         }
         
@@ -26,12 +27,12 @@
                 margin-top: -38px;
             }
             40% {
-                margin-top: -0px;
+                margin-top: 0px;
             }
         }
         
         .l_container {
-            position: absolute;
+            position: relative;
             display: inline-block;
             width: 100%;
             height: 50vh;
@@ -52,7 +53,7 @@
                 margin-right: -700px;
             }
             40% {
-                margin-right: 5px;
+                margin-right: 0px;
             }
         }
         
@@ -62,18 +63,17 @@
             float: right;
             right: 0px;
             animation: right 3s ease-in-out;
+            overflow: hidden;
         }
         
         .intro_left {
             display: inline;
             width: 40%;
-            color: white;
-            letter-spacing: 2px;
-            font-size: 32px;
             float: left;
-            left: 60px;
+            left: 0px;
             animation: left 3s ease-in-out;
             overflow: hidden;
+            padding-left: 4%;
         }
         
         @keyframes left {
@@ -81,7 +81,7 @@
                 margin-left: -700px;
             }
             40% {
-                margin-left: 40px;
+                margin-left: 0px;
             }
         }
         
@@ -90,10 +90,10 @@
             height: 10vh;
             background-color: wheat;
             position: absolute;
-            transform: translate(400%, -80px);
+            transform: translate(390%, 20%);
             border-radius: 50px;
             border-bottom-left-radius: 3px;
-            animation: op 3s ease-in-out;
+            animation: op 1s ease-in-out;
             opacity: 1;
             display: flex;
             justify-content: center;
@@ -105,9 +105,9 @@
                 opacity: 0;
                 margin-top: -150px;
             }
-            20% {
+            40% {
                 opacity: 0.5;
-                margin-top: -80;
+                margin-top: 2%;
             }
         }
         
@@ -116,15 +116,29 @@
             font-size: 28px;
             font-weight: bold;
             font-family: 'Grey Qo';
+            animation: skew 2s ease-in-out infinite;
+            transform: rotate(20deg);
         }
         
-        .intro_left h1 {
+        @keyframes skew {
+            0% {
+                transform: rotate(20deg);
+            }
+            40% {
+                transform: rotate(-20deg);
+            }
+        }
+        
+        h1 {
             text-decoration: underline white;
             text-decoration-style: double;
+            font-size: 52px;
+            letter-spacing: 2px;
         }
         
-        .intro_left p {
-            font-size: 38px;
+        p {
+            font-size: 36px;
+            letter-spacing: 2px;
         }
         
         .orange {
@@ -203,7 +217,7 @@
             margin-top: -2.5%;
             margin-left: 42.4%;
             animation: spi 1s ease-in-out infinite;
-            animation-delay: 3s;
+            animation-delay: 1s;
         }
         
         @keyframes spi {
@@ -213,4 +227,44 @@
             40% {
                 margin-top: -1%
             }
+        }
+        
+        .container2 {
+            position: relative;
+            display: inline-block;
+            margin-top: 10%;
+            width: 100%;
+            height: 50vh;
+            box-sizing: border-box;
+        }
+        
+        .makeup {
+            background: url(makeup.gif);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 90%;
+            height: 90vh;
+            box-sizing: border-box;
+        }
+        
+        .m_top {
+            margin: 7% 0;
+        }
+        
+        .container3 {
+            position: relative;
+            display: inline-block;
+            margin-top: 10%;
+            width: 100%;
+            height: 50vh;
+            box-sizing: border-box;
+        }
+        
+        .t_t {
+            background: url(tricktreat.gif);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 90%;
+            height: 90vh;
+            box-sizing: border-box;
         }
