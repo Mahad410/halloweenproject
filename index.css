@@ -258,7 +258,7 @@ main {
 
 /* responsiveness */
 
-@media (max-width:325px) {
+@media (max-width:320px) {
     .l_web {
         width: 40px;
         height: 40px;
@@ -308,26 +308,27 @@ main {
     }
     .box {
         display: block;
+        margin-bottom: 3rem;
     }
     .home {
         width: 70%;
-        height: 40vh;
+        height: 35vh;
     }
     .make_up {
         width: 70%;
-        height: 40vh;
+        height: 35vh;
     }
     .trickortreat {
         width: 70%;
-        height: 40vh;
+        height: 35vh;
     }
     .game {
         width: 70%;
-        height: 40vh;
+        height: 35vh;
     }
     .text h1 {
         font-size: 1.5rem;
-        padding-top: 1rem;
+        padding-top: 0;
     }
     .box:nth-child(even) .pic {
         order: 2;
@@ -415,6 +416,7 @@ main {
     }
     .box {
         display: block;
+        margin-bottom: 3rem;
     }
     .home {
         width: 70%;
@@ -434,7 +436,7 @@ main {
     }
     .text h1 {
         font-size: 1.9rem;
-        padding-top: 1rem;
+        padding-top: 0;
     }
     .box:nth-child(even) .pic {
         order: 2;
@@ -519,26 +521,27 @@ main {
     }
     .box {
         display: block;
+        margin-bottom: 3rem;
     }
     .home {
         width: 70%;
-        height: 55vh;
+        height: 35vh;
     }
     .make_up {
         width: 70%;
-        height: 55vh;
+        height: 35vh;
     }
     .trickortreat {
         width: 70%;
-        height: 55vh;
+        height: 35vh;
     }
     .game {
         width: 70%;
-        height: 55vh;
+        height: 35vh;
     }
     .text h1 {
-        font-size: 2.2rem;
-        padding-top: 2rem;
+        font-size: 2.3rem;
+        padding-top: 0;
     }
     .box:nth-child(even) .pic {
         order: 2;
@@ -551,7 +554,7 @@ main {
         justify-content: center;
     }
     .text p {
-        font-size: 1rem;
+        font-size: 1.8rem;
     }
     .love_text {
         left: 1%;
@@ -568,7 +571,112 @@ main {
     }
 }
 
-@media (min-width:426px) and (max-width:768px) {
+@media (min-width:426px) and (max-width:500px) {
+    .l_web {
+        width: 58px;
+        height: 58px;
+    }
+    .r_web {
+        width: 58px;
+        height: 58px;
+    }
+    .line {
+        width: 0.19rem;
+        height: 4rem;
+        background-color: #000;
+    }
+    .spi {
+        width: 40px;
+        height: 40px;
+    }
+    @keyframes up {
+        0% {
+            margin-top: 0px;
+        }
+        40% {
+            margin-top: -30px;
+        }
+    }
+    .bat {
+        transform: translate(5px, 10px);
+    }
+    .bat .line {
+        height: 4rem;
+    }
+    .ba {
+        transform: translateX(-80%);
+        width: 40px;
+        height: 40px;
+    }
+    @keyframes fly {
+        0% {
+            transform: translate(5px, 10px);
+        }
+        40% {
+            transform: translate(-5px, -10px);
+        }
+    }
+    .pumpkin .line {
+        width: 0.19rem;
+        height: 3rem;
+    }
+    .pump {
+        width: 40px;
+        height: 40px;
+    }
+    .box {
+        display: block;
+        margin-bottom: 3rem;
+    }
+    .home {
+        width: 70%;
+        height: 40vh;
+    }
+    .make_up {
+        width: 70%;
+        height: 40vh;
+    }
+    .trickortreat {
+        width: 70%;
+        height: 40vh;
+    }
+    .game {
+        width: 70%;
+        height: 40vh;
+    }
+    .text h1 {
+        font-size: 2.3rem;
+        padding-top: 0;
+    }
+    .box:nth-child(even) .pic {
+        order: 2;
+        display: flex;
+        justify-content: center;
+    }
+    .pic {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    .text p {
+        font-size: 1.8rem;
+    }
+    .love_text {
+        left: 1%;
+        margin-top: -8%;
+    }
+    .love_text p {
+        font-size: 1rem;
+    }
+    .contact_me {
+        display: none;
+    }
+    .love_text a {
+        text-decoration: underline #000;
+    }
+}
+
+@media (min-width:501px) and (max-width:768px) {
     .l_web {
         width: 105px;
         height: 105px;
@@ -598,85 +706,7 @@ main {
     }
     .box {
         display: block;
-    }
-    .home {
-        width: 50%;
-        height: 70vh;
-    }
-    .make_up {
-        width: 50%;
-        height: 70vh;
-    }
-    .trickortreat {
-        width: 50%;
-        height: 70vh;
-    }
-    .game {
-        width: 50%;
-        height: 70vh;
-    }
-    .text h1 {
-        font-size: 3.5rem;
-        padding-top: 2rem;
-    }
-    .box:nth-child(even) .pic {
-        order: 2;
-        display: flex;
-        justify-content: center;
-    }
-    .pic {
-        text-align: center;
-        display: flex;
-        justify-content: center;
-    }
-    .text p {
-        font-size: 2.8rem;
-    }
-    .love_text {
-        left: 1%;
-        margin-top: -8%;
-    }
-    .love_text p {
-        font-size: 2rem;
-    }
-    .contact_me {
-        display: none;
-    }
-    .love_text a {
-        text-decoration: underline #000;
-    }
-}
-
-@media (min-width:700px) and (max-width:766px) {
-    .l_web {
-        width: 105px;
-        height: 105px;
-    }
-    .r_web {
-        width: 105px;
-        height: 105px;
-    }
-    .line {
-        width: 0.19rem;
-        height: 10rem;
-        background-color: #000;
-    }
-    @keyframes up {
-        0% {
-            margin-top: 0px;
-        }
-        40% {
-            margin-top: -30px;
-        }
-    }
-    .bat .line {
-        height: 8rem;
-    }
-    .pumpkin .line {
-        height: 10rem;
-    }
-    .box {
-        display: block;
+        padding-bottom: 3rem;
     }
     .home {
         width: 80%;
@@ -696,7 +726,7 @@ main {
     }
     .text h1 {
         font-size: 3.5rem;
-        padding-top: 2rem;
+        padding-top: 0;
     }
     .box:nth-child(even) .pic {
         order: 2;
