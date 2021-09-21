@@ -1,379 +1,924 @@
-            * {
-                margin: 0%;
-                padding: 0%;
-                box-sizing: border-box;
-                color: #fff;
-                font-family: 'Fleur De Leah';
-            }
-            
-            body {
-                background-color: #000;
-            }
-            
-            .container {
-                width: 100%;
-                margin: auto;
-                overflow: hidden;
-                scroll-behavior: smooth;
-            }
-            
-            main {
-                max-width: 1400px;
-                margin: auto;
-                overflow: hidden;
-            }
-            
-            .web {
-                display: flexbox;
-            }
-            
-            .l_web {
-                background: url(spiderweb.png);
-                background-size: contain;
-                background-repeat: no-repeat;
-                width: 60px;
-                height: 60px;
-                transform: rotate(270deg);
-                position: absolute;
-                top: 0;
-                left: 0;
-            }
-            
-            .r_web {
-                background: url(spiderweb1.png);
-                background-size: contain;
-                background-repeat: no-repeat;
-                width: 80px;
-                height: 80px;
-                position: absolute;
-                top: 0;
-                right: 0;
-            }
-            
-            .spider {
-                position: absolute;
-                top: 0%;
-                left: 50%;
-            }
-            
-            .line {
-                width: 0.19rem;
-                height: 15rem;
-                background-color: #000;
-            }
-            
-            .spi {
-                background: url(spider.png);
-                background-repeat: no-repeat;
-                background-size: contain;
-                transform: translateX(-48%);
-                width: 70px;
-                height: 70px;
-                animation: up 2s ease-in-out infinite;
-            }
-            
-            @keyframes up {
-                0% {
-                    margin-top: 0px;
-                }
-                40% {
-                    margin-top: -50px;
-                }
-            }
-            
-            .bat {
-                position: absolute;
-                top: 0%;
-                left: 30%;
-                animation: fly 3s ease-in-out infinite;
-                transform: translate(30px, 20px);
-            }
-            
-            .bat .line {
-                width: 0.19rem;
-                height: 20rem;
-                margin-top: -50px;
-                background-color: transparent;
-            }
-            
-            .ba {
-                background: url(bat.png);
-                background-repeat: no-repeat;
-                background-size: contain;
-                transform: translateX(-48%);
-                width: 70px;
-                height: 70px;
-            }
-            
-            @keyframes fly {
-                0% {
-                    transform: translate(30px, 20px);
-                }
-                40% {
-                    transform: translate(-30px, -20px);
-                }
-            }
-            
-            .pumpkin {
-                position: absolute;
-                top: 0%;
-                left: 80%;
-                animation: pfly 4s ease-in-out infinite;
-                transform: rotate(20deg);
-            }
-            
-            .pumpkin .line {
-                width: 0.19rem;
-                height: 20rem;
-                margin-top: -50px;
-                background-color: transparent;
-            }
-            
-            .pump {
-                background: url(pumpkin.png);
-                background-repeat: no-repeat;
-                background-size: contain;
-                transform: translateX(-48%);
-                width: 70px;
-                height: 70px;
-            }
-            
-            @keyframes pfly {
-                0% {
-                    transform: rotate(20deg);
-                }
-                40% {
-                    transform: rotate(-20deg);
-                }
-            }
-            
-            .box {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                grid-gap: 2rem;
-                padding: 0px 2rem;
-                margin-bottom: 1rem;
-            }
-            
-            .home {
-                background: url(halloween.gif);
-                background-size: contain;
-                background-repeat: no-repeat;
-                width: 100%;
-                height: 60vh;
-            }
-            
-            .make_up {
-                background: url(makeup.gif);
-                background-size: contain;
-                background-repeat: no-repeat;
-                width: 100%;
-                height: 60vh;
-                margin-left: 12%;
-            }
-            
-            .trickortreat {
-                background: url(tricktreat.gif);
-                background-size: contain;
-                background-repeat: no-repeat;
-                width: 100%;
-                height: 65vh;
-            }
-            
-            .game {
-                background: url(games.gif);
-                background-size: contain;
-                background-repeat: no-repeat;
-                width: 100%;
-                height: 65vh;
-                margin-left: 12%;
-            }
-            
-            .text h1 {
-                font-size: 4rem;
-                padding-top: 3rem;
-                text-decoration: underline #fff;
-                text-decoration-style: double;
-            }
-            
-            .box:nth-child(even) .pic {
-                order: 2;
-            }
-            
-            .text p {
-                font-size: 2.5rem;
-            }
-            
-            .orange {
-                color: #ff5500;
-            }
-            
-            .love_text {
-                position: absolute;
-                left: 1%;
-                margin-top: -7%;
-            }
-            
-            .love_text p {
-                font-size: 2rem;
-                color: #000;
-                font-weight: bolder;
-            }
-            
-            .ouija {
-                background: url(ouija_c.png);
-                background-repeat: no-repeat;
-                background-size: contain;
-                width: 70px;
-                height: 70px;
-            }
-            
-            .contact_me {
-                position: absolute;
-                right: 3.5%;
-                margin-top: -10%;
-            }
-            
-            .contact_me p {
-                color: #000;
-                font-size: 1.5rem;
-                font-weight: bolder;
-                margin-left: -8px;
-            }
-            
-            .contact_me a {
-                text-decoration: none;
-            }
-            
-            .contact_me a:hover {
-                text-decoration: underline #000;
-                text-decoration-style: double;
-            }
-            /* responsiveness */
-            
-            @media (max-width: 1200px) {
-                .make_up {
-                    margin-left: 35%;
-                }
-                .game {
-                    margin-left: 35%;
-                }
-                .love_text {
-                    margin-top: -8.5%;
-                }
-                .love_text p {
-                    font-size: 2rem;
-                }
-                .ouija {
-                    width: 45px;
-                    height: 45px;
-                }
-                .contact_me {
-                    right: 2%;
-                    margin-top: -10%;
-                }
-                .contact_me p {
-                    font-size: 1.8rem;
-                    margin-left: -30px;
-                }
-            }
-            
-            @media (max-width: 900px) {
-                .box {
-                    display: block;
-                }
-                .bat {
-                    transform: translate(15px, 15px);
-                }
-                .bat .line {
-                    height: 13rem;
-                }
-                @keyframes fly {
-                    0% {
-                        transform: translate(15px, 15px);
-                    }
-                    40% {
-                        transform: translate(-15px, -15px);
-                    }
-                }
-                .pumpkin .line {
-                    height: 15rem;
-                }
-                .home {
-                    width: 90%;
-                    height: 55vh;
-                    margin-left: 50%;
-                }
-                .make_up {
-                    width: 90%;
-                    height: 55vh;
-                }
-                .trickortreat {
-                    width: 90%;
-                    height: 55vh;
-                    margin-left: 50%;
-                }
-                .game {
-                    width: 90%;
-                    height: 55vh;
-                }
-                .text h1 {
-                    font-size: 3rem;
-                }
-                .text p {
-                    font-size: 2rem;
-                }
-                .love_text {
-                    margin-top: -8%;
-                }
-                .love_text p {
-                    font-size: 1.5rem;
-                }
-                .ouija {
-                    width: 40px;
-                    height: 40px;
-                }
-                .contact_me {
-                    right: 2%;
-                    margin-top: -12%;
-                }
-                .contact_me p {
-                    font-size: 1.2rem;
-                    margin-left: -15px;
-                }
-            }
-            
-            @media (max-width: 840px) {
-                .make_up {
-                    margin-left: 60%;
-                }
-                .game {
-                    margin-left: 60%;
-                }
-                .love_text {
-                    margin-top: -7%;
-                }
-                .love_text p {
-                    font-size: 1.7rem;
-                }
-                .ouija {
-                    width: 45px;
-                    height: 45px;
-                }
-                .contact_me {
-                    right: 2%;
-                    margin-top: -10%;
-                }
-                .contact_me p {
-                    font-size: 1.3rem;
-                    margin-left: -16px;
-                }
-                .pump {
-                    width: 50px;
-                    height: 50px;
-                }
-                .ba {
-                    width: 50px;
-                    height: 50px;
-                }
-            }
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Fleur De Leah';
+}
+
+body {
+    background-color: #000;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+main {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.web {
+    display: flexbox;
+}
+
+.l_web {
+    background: url(spiderweb.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    transform: rotate(270deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.r_web {
+    background: url(spiderweb1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.spider {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+}
+
+.line {
+    width: 0.19rem;
+    height: 15rem;
+    background-color: #000;
+}
+
+.spi {
+    background: url(spider.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: translateX(-48%);
+    width: 70px;
+    height: 70px;
+    animation: up 2s ease-in-out infinite;
+}
+
+@keyframes up {
+    0% {
+        margin-top: 0px;
+    }
+    40% {
+        margin-top: -50px;
+    }
+}
+
+.bat {
+    position: absolute;
+    top: 0%;
+    left: 30%;
+    animation: fly 3s ease-in-out infinite;
+    transform: translate(30px, 20px);
+}
+
+.bat .line {
+    width: 0.19rem;
+    height: 14rem;
+    background-color: transparent;
+}
+
+.ba {
+    background: url(bat.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: translateX(-48%);
+    width: 70px;
+    height: 70px;
+}
+
+@keyframes fly {
+    0% {
+        transform: translate(30px, 20px);
+    }
+    40% {
+        transform: translate(-30px, -20px);
+    }
+}
+
+.pumpkin {
+    position: absolute;
+    top: 0%;
+    left: 80%;
+    animation: pfly 4s ease-in-out infinite;
+    transform: rotate(20deg);
+}
+
+.pumpkin .line {
+    width: 0.19rem;
+    height: 14rem;
+    background-color: transparent;
+}
+
+.pump {
+    background: url(pumpkin.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: translateX(-48%);
+    width: 70px;
+    height: 70px;
+}
+
+@keyframes pfly {
+    0% {
+        transform: rotate(20deg);
+    }
+    40% {
+        transform: rotate(-20deg);
+    }
+}
+
+.box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem;
+    padding: 0px 2rem;
+    margin-bottom: 1rem;
+}
+
+.home {
+    background: url(halloween.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 70%;
+    height: 60vh;
+}
+
+.make_up {
+    background: url(makeup.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 70%;
+    height: 60vh;
+}
+
+.trickortreat {
+    background: url(tricktreat.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 70%;
+    height: 60vh;
+}
+
+.game {
+    background: url(games.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 70%;
+    height: 60vh;
+}
+
+.text h1 {
+    font-size: 4rem;
+    padding-top: 3rem;
+    text-decoration: underline #fff;
+    text-decoration-style: double;
+}
+
+.box:nth-child(even) .pic {
+    order: 2;
+    display: flex;
+    justify-content: right;
+}
+
+.text {
+    text-align: center;
+}
+
+.text p {
+    font-size: 2.5rem;
+}
+
+.orange {
+    color: #ff5500;
+}
+
+.love_text {
+    position: absolute;
+    left: 1%;
+    margin-top: -7%;
+}
+
+.love_text p {
+    font-size: 2rem;
+    color: #000;
+    font-weight: bolder;
+}
+
+.ouija {
+    background: url(ouija_c.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 70px;
+    height: 70px;
+}
+
+.contact_me {
+    position: absolute;
+    right: 3.5%;
+    margin-top: -10%;
+}
+
+.contact_me p {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-left: -8px;
+    color: #000;
+}
+
+.love_text a,
+.contact_me a {
+    text-decoration: none;
+    color: #000;
+}
+
+.love_text a:hover,
+.contact_me a:hover {
+    text-decoration: underline #000;
+    text-decoration-style: double;
+}
+
+
+/* responsiveness */
+
+@media (max-width:325px) {
+    .l_web {
+        width: 40px;
+        height: 40px;
+    }
+    .r_web {
+        width: 50px;
+        height: 50px;
+    }
+    .line {
+        width: 0.19rem;
+        height: 4rem;
+        background-color: #000;
+    }
+    .spi {
+        width: 40px;
+        height: 40px;
+    }
+    .bat {
+        transform: translate(5px, 10px);
+    }
+    .bat .line {
+        height: 4rem;
+    }
+    .ba {
+        transform: translateX(-80%);
+        width: 40px;
+        height: 40px;
+    }
+    @keyframes fly {
+        0% {
+            transform: translate(5px, 10px);
+        }
+        40% {
+            transform: translate(-5px, -10px);
+        }
+    }
+    .pumpkin {
+        transform: rotate(20deg);
+    }
+    .pumpkin .line {
+        width: 0.19rem;
+        height: 5rem;
+    }
+    .pump {
+        width: 40px;
+        height: 40px;
+    }
+    .box {
+        display: block;
+    }
+    .home {
+        width: 70%;
+        height: 40vh;
+    }
+    .make_up {
+        width: 70%;
+        height: 40vh;
+    }
+    .trickortreat {
+        width: 70%;
+        height: 40vh;
+    }
+    .game {
+        width: 70%;
+        height: 40vh;
+    }
+    .text h1 {
+        font-size: 1.5rem;
+        padding-top: 2rem;
+    }
+    .box:nth-child(even) .pic {
+        order: 2;
+        display: flex;
+        justify-content: center;
+    }
+    .pic {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    .text p {
+        font-size: 1.3rem;
+    }
+    .love_text {
+        left: 1%;
+        margin-top: -10%;
+    }
+    .love_text p {
+        font-size: 0.8rem;
+    }
+    .contact_me {
+        display: none;
+    }
+    .love_text a {
+        text-decoration: underline #000;
+    }
+}
+
+@media (min-width:326px) and (max-width:375px) {
+    .l_web {
+        width: 48px;
+        height: 48px;
+    }
+    .r_web {
+        width: 50px;
+        height: 50px;
+    }
+    .line {
+        width: 0.19rem;
+        height: 4rem;
+        background-color: #000;
+    }
+    .spi {
+        width: 40px;
+        height: 40px;
+    }
+    @keyframes up {
+        0% {
+            margin-top: 0px;
+        }
+        40% {
+            margin-top: -30px;
+        }
+    }
+    .bat {
+        transform: translate(5px, 10px);
+    }
+    .bat .line {
+        height: 4rem;
+    }
+    .ba {
+        transform: translateX(-80%);
+        width: 40px;
+        height: 40px;
+    }
+    @keyframes fly {
+        0% {
+            transform: translate(5px, 10px);
+        }
+        40% {
+            transform: translate(-5px, -10px);
+        }
+    }
+    .pumpkin {
+        transform: rotate(20deg);
+    }
+    .pumpkin .line {
+        width: 0.19rem;
+        height: 5rem;
+    }
+    .pump {
+        width: 40px;
+        height: 40px;
+    }
+    .box {
+        display: block;
+    }
+    .home {
+        width: 70%;
+        height: 50vh;
+    }
+    .make_up {
+        width: 70%;
+        height: 50vh;
+    }
+    .trickortreat {
+        width: 70%;
+        height: 50vh;
+    }
+    .game {
+        width: 70%;
+        height: 50vh;
+    }
+    .text h1 {
+        font-size: 1.9rem;
+        padding-top: 2rem;
+    }
+    .box:nth-child(even) .pic {
+        order: 2;
+        display: flex;
+        justify-content: center;
+    }
+    .pic {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    .text p {
+        font-size: 1.8rem;
+    }
+    .love_text {
+        left: 1%;
+        margin-top: -8%;
+    }
+    .love_text p {
+        font-size: 0.8rem;
+    }
+    .contact_me {
+        display: none;
+    }
+    .love_text a {
+        text-decoration: underline #000;
+    }
+}
+
+@media (min-width:376px) and (max-width:425px) {
+    .l_web {
+        width: 58px;
+        height: 58px;
+    }
+    .r_web {
+        width: 58px;
+        height: 58px;
+    }
+    .line {
+        width: 0.19rem;
+        height: 4rem;
+        background-color: #000;
+    }
+    .spi {
+        width: 40px;
+        height: 40px;
+    }
+    @keyframes up {
+        0% {
+            margin-top: 0px;
+        }
+        40% {
+            margin-top: -30px;
+        }
+    }
+    .bat {
+        transform: translate(5px, 10px);
+    }
+    .bat .line {
+        height: 4rem;
+    }
+    .ba {
+        transform: translateX(-80%);
+        width: 40px;
+        height: 40px;
+    }
+    @keyframes fly {
+        0% {
+            transform: translate(5px, 10px);
+        }
+        40% {
+            transform: translate(-5px, -10px);
+        }
+    }
+    .pumpkin .line {
+        width: 0.19rem;
+        height: 5rem;
+    }
+    .pump {
+        width: 40px;
+        height: 40px;
+    }
+    .box {
+        display: block;
+    }
+    .home {
+        width: 70%;
+        height: 55vh;
+    }
+    .make_up {
+        width: 70%;
+        height: 55vh;
+    }
+    .trickortreat {
+        width: 70%;
+        height: 55vh;
+    }
+    .game {
+        width: 70%;
+        height: 55vh;
+    }
+    .text h1 {
+        font-size: 2.2rem;
+        padding-top: 2rem;
+    }
+    .box:nth-child(even) .pic {
+        order: 2;
+        display: flex;
+        justify-content: center;
+    }
+    .pic {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    .text p {
+        font-size: 2rem;
+    }
+    .love_text {
+        left: 1%;
+        margin-top: -8%;
+    }
+    .love_text p {
+        font-size: 1rem;
+    }
+    .contact_me {
+        display: none;
+    }
+    .love_text a {
+        text-decoration: underline #000;
+    }
+}
+
+@media (min-width:426px) and (max-width:768px) {
+    .l_web {
+        width: 105px;
+        height: 105px;
+    }
+    .r_web {
+        width: 105px;
+        height: 105px;
+    }
+    .line {
+        width: 0.19rem;
+        height: 10rem;
+        background-color: #000;
+    }
+    @keyframes up {
+        0% {
+            margin-top: 0px;
+        }
+        40% {
+            margin-top: -30px;
+        }
+    }
+    .bat .line {
+        height: 8rem;
+    }
+    .pumpkin .line {
+        height: 10rem;
+    }
+    .box {
+        display: block;
+    }
+    .home {
+        width: 60%;
+        height: 70vh;
+    }
+    .make_up {
+        width: 60%;
+        height: 70vh;
+    }
+    .trickortreat {
+        width: 60%;
+        height: 70vh;
+    }
+    .game {
+        width: 60%;
+        height: 70vh;
+    }
+    .text h1 {
+        font-size: 3.5rem;
+        padding-top: 2rem;
+    }
+    .box:nth-child(even) .pic {
+        order: 2;
+        display: flex;
+        justify-content: center;
+    }
+    .pic {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    .text p {
+        font-size: 2.8rem;
+    }
+    .love_text {
+        left: 1%;
+        margin-top: -8%;
+    }
+    .love_text p {
+        font-size: 2rem;
+    }
+    .contact_me {
+        display: none;
+    }
+    .love_text a {
+        text-decoration: underline #000;
+    }
+}
+
+@media (min-width:427px) and (max-width:766px) {
+    .l_web {
+        width: 105px;
+        height: 105px;
+    }
+    .r_web {
+        width: 105px;
+        height: 105px;
+    }
+    .line {
+        width: 0.19rem;
+        height: 10rem;
+        background-color: #000;
+    }
+    @keyframes up {
+        0% {
+            margin-top: 0px;
+        }
+        40% {
+            margin-top: -30px;
+        }
+    }
+    .bat .line {
+        height: 8rem;
+    }
+    .pumpkin .line {
+        height: 10rem;
+    }
+    .box {
+        display: block;
+    }
+    .home {
+        width: 80%;
+        height: 70vh;
+        border: 1px solid violet;
+    }
+    .make_up {
+        width: 80%;
+        height: 70vh;
+    }
+    .trickortreat {
+        width: 80%;
+        height: 70vh;
+    }
+    .game {
+        width: 80%;
+        height: 70vh;
+    }
+    .text h1 {
+        font-size: 3.5rem;
+        padding-top: 2rem;
+    }
+    .box:nth-child(even) .pic {
+        order: 2;
+        display: flex;
+        justify-content: center;
+    }
+    .pic {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    .text p {
+        font-size: 2.8rem;
+    }
+    .love_text {
+        left: 1%;
+        margin-top: -9%;
+    }
+    .love_text p {
+        font-size: 2rem;
+    }
+    .contact_me {
+        display: none;
+    }
+    .love_text a {
+        text-decoration: underline #000;
+    }
+}
+
+
+/* @media (max-width: 1200px) {
+    .make_up {
+        margin-left: 20%;
+    }
+    .game {
+        margin-left: 20%;
+    }
+    .love_text {
+        margin-top: -8.5%;
+    }
+    .love_text p {
+        font-size: 2rem;
+    }
+    .ouija {
+        width: 45px;
+        height: 45px;
+    }
+    .contact_me {
+        right: 2%;
+        margin-top: -10%;
+    }
+    .contact_me p {
+        font-size: 1.8rem;
+        margin-left: -30px;
+    }
+}
+
+@media (max-width: 950px) {
+    .box {
+        display: block;
+    }
+    .bat {
+        transform: translate(15px, 15px);
+    }
+    .bat .line {
+        height: 13rem;
+    }
+    @keyframes fly {
+        0% {
+            transform: translate(15px, 15px);
+        }
+        40% {
+            transform: translate(-15px, -15px);
+        }
+    }
+    .pumpkin .line {
+        height: 15rem;
+    }
+    .home {
+        width: 90%;
+        height: 55vh;
+    }
+    .make_up {
+        width: 90%;
+        height: 55vh;
+        margin-left: 55%;
+    }
+    .trickortreat {
+        width: 90%;
+        height: 55vh;
+    }
+    .game {
+        width: 90%;
+        height: 55vh;
+        margin-left: 55%;
+    }
+    .text h1 {
+        font-size: 3rem;
+    }
+    .text p {
+        font-size: 2rem;
+    }
+    .love_text {
+        margin-top: -8.2%;
+    }
+    .love_text p {
+        font-size: 1.5rem;
+    }
+    .ouija {
+        width: 40px;
+        height: 40px;
+    }
+    .contact_me {
+        right: 3%;
+        margin-top: -12%;
+    }
+    .contact_me p {
+        font-size: 1.2rem;
+        margin-left: -15px;
+    }
+}
+
+@media (max-width: 840px) {
+    .make_up {
+        margin-left: 55%;
+    }
+    .game {
+        margin-left: 55%;
+    }
+    .love_text {
+        margin-top: -7%;
+    }
+    .love_text p {
+        font-size: 1.7rem;
+    }
+    .ouija {
+        width: 45px;
+        height: 45px;
+    }
+    .contact_me {
+        right: 2%;
+        margin-top: -10%;
+    }
+    .contact_me p {
+        font-size: 1.3rem;
+        margin-left: -16px;
+    }
+    .pump {
+        width: 50px;
+        height: 50px;
+    }
+    .ba {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 475px) {
+    .bat .line {
+        height: 8rem;
+    }
+}
+
+.pumpkin .line {
+    height: 7rem;
+}
+
+.home {
+    margin-top: 20%;
+    width: 75%;
+    height: 40vh;
+    margin-left: 30%;
+}
+
+.make_up {
+    width: 75%;
+    height: 40vh;
+    margin-left: -1%;
+}
+
+.trickortreat {
+    width: 75%;
+    height: 40vh;
+    margin-left: 30%;
+}
+
+.game {
+    width: 75%;
+    height: 40vh;
+    margin-left: -1%;
+}
+
+.text h1 {
+    font-size: 1.6rem;
+    padding-top: 1rem;
+}
+
+.text p {
+    font-size: 1.4rem;
+    padding-bottom: 1rem;
+}
+
+.love_text {
+    margin-top: -8%;
+}
+
+.love_text p {
+    font-size: 1rem;
+}
+
+.ouija {
+    width: 20px;
+    height: 20px;
+}
+
+.contact_me {
+    right: 1.5%;
+    margin-top: -11%;
+}
+
+.contact_me p {
+    font-size: 0.9rem;
+    margin-left: -20px;
+} */
