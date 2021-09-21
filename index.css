@@ -1,257 +1,380 @@
-    * {
-        margin: 0%;
-        padding: 0%;
-        box-sizing: border-box;
-        color: #fff;
-        font-family: 'Fleur De Leah';
-    }
-    
-    body {
-        background-color: #000;
-    }
-    
-    .container {
-        width: 100%;
-        margin: auto;
-        overflow: hidden;
-        scroll-behavior: smooth;
-    }
-    
-    main {
-        max-width: 1400px;
-        margin: auto;
-        overflow: hidden;
-    }
-    
-    .web {
-        display: flexbox;
-    }
-    
-    .l_web {
-        background: url(spiderweb.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-        width: 60px;
-        height: 60px;
-        transform: rotate(270deg);
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-    
-    .r_web {
-        background: url(spiderweb1.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-        width: 80px;
-        height: 80px;
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-    
-    .spider {
-        position: absolute;
-        top: 0%;
-        left: 50%;
-    }
-    
-    .line {
-        width: 0.19rem;
-        height: 15rem;
-        background-color: #000;
-    }
-    
-    .spi {
-        background: url(spider.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        transform: translateX(-48%);
-        width: 70px;
-        height: 70px;
-        animation: up 2s ease-in-out infinite;
-    }
-    
-    @keyframes up {
-        0% {
-            margin-top: 0px;
-        }
-        40% {
-            margin-top: -50px;
-        }
-    }
-    
-    .bat {
-        position: absolute;
-        top: 0%;
-        left: 30%;
-        animation: fly 3s ease-in-out infinite;
-        transform: rotate(16deg);
-    }
-    
-    .line {
-        width: 0.19rem;
-        height: 20rem;
-        margin-top: -50px;
-        background-color: #000;
-    }
-    
-    .ba {
-        background: url(bat.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        transform: translateX(-48%);
-        width: 70px;
-        height: 70px;
-    }
-    
-    @keyframes fly {
-        0% {
-            transform: rotate(16deg);
-        }
-        40% {
-            transform: rotate(-16deg);
-        }
-    }
-    
-    .pumpkin {
-        position: absolute;
-        top: 0%;
-        left: 80%;
-        animation: pfly 4s ease-in-out infinite;
-        transform: rotate(20deg);
-    }
-    
-    .pumpkin .line {
-        width: 0.19rem;
-        height: 20rem;
-        margin-top: -50px;
-        background-color: transparent;
-    }
-    
-    .pump {
-        background: url(pumpkin.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        transform: translateX(-48%);
-        width: 70px;
-        height: 70px;
-    }
-    
-    @keyframes pfly {
-        0% {
-            transform: rotate(20deg);
-        }
-        40% {
-            transform: rotate(-20deg);
-        }
-    }
-    
-    .box {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 2rem;
-        padding: 0px 2rem;
-        margin-bottom: 3rem;
-    }
-    
-    .home {
-        background: url(halloween.gif);
-        background-size: contain;
-        background-repeat: no-repeat;
-        width: 100%;
-        height: 60vh;
-        margin-left: 170px;
-    }
-    
-    .make_up {
-        background: url(makeup.gif);
-        background-size: contain;
-        background-repeat: no-repeat;
-        width: 100%;
-        height: 60vh;
-    }
-    
-    .trickortreat {
-        background: url(tricktreat.gif);
-        background-size: contain;
-        background-repeat: no-repeat;
-        width: 100%;
-        height: 65vh;
-        margin-left: 170px;
-    }
-    
-    .game {
-        background: url(games.gif);
-        background-size: contain;
-        background-repeat: no-repeat;
-        width: 100%;
-        height: 65vh;
-    }
-    
-    .text h1 {
-        font-size: 4rem;
-        padding-top: 6rem;
-        text-decoration: underline #fff;
-        text-decoration-style: double;
-    }
-    
-    .box:nth-child(even) .text {
-        order: 2;
-    }
-    
-    .text p {
-        font-size: 2.5rem;
-    }
-    
-    .orange {
-        color: #ff5500;
-    }
-    
-    .love_text {
-        position: absolute;
-        transform: translate(2%, -180%);
-    }
-    
-    .love_text p {
-        font-size: 2rem;
-        color: #000;
-        font-weight: bolder;
-    }
-    
-    .ouija {
-        background: url(ouija_c.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 70px;
-        height: 70px;
-    }
-    
-    .contact_me {
-        position: absolute;
-        right: 0%;
-        transform: translate(-40%, -130%);
-    }
-    
-    .contact_me p {
-        color: #000;
-        font-size: 1.5rem;
-        font-weight: bolder;
-        margin-left: -8px;
-    }
-    
-    .contact_me a {
-        text-decoration: none;
-    }
-    
-    .contact_me a:hover {
-        text-decoration: underline #000;
-        text-decoration-style: double;
-    }
-    /* responsiveness */
-    
-    @media (max-width: 700px) {
-        .box {
-            display: block;
-        }
-    }
+            * {
+                margin: 0%;
+                padding: 0%;
+                box-sizing: border-box;
+                color: #fff;
+                font-family: 'Fleur De Leah';
+            }
+            
+            body {
+                background-color: #000;
+            }
+            
+            .container {
+                width: 100%;
+                margin: auto;
+                overflow: hidden;
+                scroll-behavior: smooth;
+            }
+            
+            main {
+                max-width: 1400px;
+                margin: auto;
+                overflow: hidden;
+            }
+            
+            .web {
+                display: flexbox;
+            }
+            
+            .l_web {
+                background: url(spiderweb.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 60px;
+                height: 60px;
+                transform: rotate(270deg);
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            
+            .r_web {
+                background: url(spiderweb1.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 80px;
+                height: 80px;
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+            
+            .spider {
+                position: absolute;
+                top: 0%;
+                left: 50%;
+            }
+            
+            .line {
+                width: 0.19rem;
+                height: 15rem;
+                background-color: #000;
+            }
+            
+            .spi {
+                background: url(spider.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                transform: translateX(-48%);
+                width: 70px;
+                height: 70px;
+                animation: up 2s ease-in-out infinite;
+            }
+            
+            @keyframes up {
+                0% {
+                    margin-top: 0px;
+                }
+                40% {
+                    margin-top: -50px;
+                }
+            }
+            
+            .bat {
+                position: absolute;
+                top: 0%;
+                left: 30%;
+                animation: fly 3s ease-in-out infinite;
+                transform: translate(30px, 20px);
+            }
+            
+            .bat .line {
+                width: 0.19rem;
+                height: 20rem;
+                margin-top: -50px;
+                background-color: transparent;
+            }
+            
+            .ba {
+                background: url(bat.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                transform: translateX(-48%);
+                width: 70px;
+                height: 70px;
+            }
+            
+            @keyframes fly {
+                0% {
+                    transform: translate(30px, 20px);
+                }
+                40% {
+                    transform: translate(-30px, -20px);
+                }
+            }
+            
+            .pumpkin {
+                position: absolute;
+                top: 0%;
+                left: 80%;
+                animation: pfly 4s ease-in-out infinite;
+                transform: rotate(20deg);
+            }
+            
+            .pumpkin .line {
+                width: 0.19rem;
+                height: 20rem;
+                margin-top: -50px;
+                background-color: transparent;
+            }
+            
+            .pump {
+                background: url(pumpkin.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                transform: translateX(-48%);
+                width: 70px;
+                height: 70px;
+            }
+            
+            @keyframes pfly {
+                0% {
+                    transform: rotate(20deg);
+                }
+                40% {
+                    transform: rotate(-20deg);
+                }
+            }
+            
+            .box {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 2rem;
+                padding: 0px 2rem;
+                margin-bottom: 1rem;
+            }
+            
+            .home {
+                background: url(halloween.gif);
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 60vh;
+                margin-left: 12%;
+            }
+            
+            .make_up {
+                background: url(makeup.gif);
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 60vh;
+            }
+            
+            .trickortreat {
+                background: url(tricktreat.gif);
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 65vh;
+                margin-left: 12%;
+            }
+            
+            .game {
+                background: url(games.gif);
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 65vh;
+            }
+            
+            .text h1 {
+                font-size: 4rem;
+                padding-top: 3rem;
+                text-decoration: underline #fff;
+                text-decoration-style: double;
+            }
+            
+            .box:nth-child(even) .text {
+                order: 2;
+            }
+            
+            .text p {
+                font-size: 2.5rem;
+            }
+            
+            .orange {
+                color: #ff5500;
+            }
+            
+            .love_text {
+                position: absolute;
+                left: 1%;
+                margin-top: -7%;
+            }
+            
+            .love_text p {
+                font-size: 2rem;
+                color: #000;
+                font-weight: bolder;
+            }
+            
+            .ouija {
+                background: url(ouija_c.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 70px;
+                height: 70px;
+            }
+            
+            .contact_me {
+                position: absolute;
+                right: 3.5%;
+                /* transform: translate(-40%, -130%); */
+                margin-top: -10%;
+            }
+            
+            .contact_me p {
+                color: #000;
+                font-size: 1.5rem;
+                font-weight: bolder;
+                margin-left: -8px;
+            }
+            
+            .contact_me a {
+                text-decoration: none;
+            }
+            
+            .contact_me a:hover {
+                text-decoration: underline #000;
+                text-decoration-style: double;
+            }
+            /* responsiveness */
+            
+            @media (max-width: 900px) {
+                .box {
+                    display: block;
+                }
+                .bat {
+                    transform: translate(15px, 15px);
+                }
+                .bat .line {
+                    height: 13rem;
+                }
+                @keyframes fly {
+                    0% {
+                        transform: translate(15px, 15px);
+                    }
+                    40% {
+                        transform: translate(-15px, -15px);
+                    }
+                }
+                .pumpkin .line {
+                    height: 15rem;
+                }
+                .home {
+                    width: 90%;
+                    height: 55vh;
+                    margin-left: 50%;
+                }
+                .make_up {
+                    width: 90%;
+                    height: 55vh;
+                }
+                .trickortreat {
+                    width: 90%;
+                    height: 55vh;
+                    margin-left: 50%;
+                }
+                .game {
+                    width: 90%;
+                    height: 55vh;
+                }
+                .text h1 {
+                    font-size: 3rem;
+                }
+                .text p {
+                    font-size: 2rem;
+                }
+                .love_text {
+                    margin-top: -8%;
+                }
+                .love_text p {
+                    font-size: 1.5rem;
+                }
+                .ouija {
+                    width: 40px;
+                    height: 40px;
+                }
+                .contact_me {
+                    right: 2%;
+                    margin-top: -12%;
+                }
+                .contact_me p {
+                    font-size: 1.2rem;
+                    margin-left: -15px;
+                }
+            }
+            
+            @media (max-width: 1200px) {
+                .home {
+                    margin-left: 35%;
+                }
+                .trickortreat {
+                    margin-left: 35%;
+                }
+                .love_text {
+                    margin-top: -8.5%;
+                }
+                .love_text p {
+                    font-size: 2rem;
+                }
+                .ouija {
+                    width: 45px;
+                    height: 45px;
+                }
+                .contact_me {
+                    right: 2%;
+                    margin-top: -10%;
+                }
+                .contact_me p {
+                    font-size: 1.8rem;
+                    margin-left: -30px;
+                }
+            }
+            
+            @media (max-width: 840px) {
+                .home {
+                    margin-left: 60%;
+                }
+                .trickortreat {
+                    margin-left: 60%;
+                }
+                .love_text {
+                    margin-top: -7%;
+                }
+                .love_text p {
+                    font-size: 1.7rem;
+                }
+                .ouija {
+                    width: 45px;
+                    height: 45px;
+                }
+                .contact_me {
+                    right: 2%;
+                    margin-top: -10%;
+                }
+                .contact_me p {
+                    font-size: 1.3rem;
+                    margin-left: -16px;
+                }
+                .pump {
+                    width: 50px;
+                    height: 50px;
+                }
+                .ba {
+                    width: 50px;
+                    height: 50px;
+                }
+            }
