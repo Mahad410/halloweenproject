@@ -161,7 +161,6 @@
                 background-repeat: no-repeat;
                 width: 100%;
                 height: 60vh;
-                margin-left: 12%;
             }
             
             .make_up {
@@ -170,6 +169,7 @@
                 background-repeat: no-repeat;
                 width: 100%;
                 height: 60vh;
+                margin-left: 12%;
             }
             
             .trickortreat {
@@ -178,7 +178,6 @@
                 background-repeat: no-repeat;
                 width: 100%;
                 height: 65vh;
-                margin-left: 12%;
             }
             
             .game {
@@ -187,6 +186,7 @@
                 background-repeat: no-repeat;
                 width: 100%;
                 height: 65vh;
+                margin-left: 12%;
             }
             
             .text h1 {
@@ -196,7 +196,7 @@
                 text-decoration-style: double;
             }
             
-            .box:nth-child(even) .text {
+            .box:nth-child(even) .pic {
                 order: 2;
             }
             
@@ -231,7 +231,6 @@
             .contact_me {
                 position: absolute;
                 right: 3.5%;
-                /* transform: translate(-40%, -130%); */
                 margin-top: -10%;
             }
             
@@ -251,6 +250,33 @@
                 text-decoration-style: double;
             }
             /* responsiveness */
+            
+            @media (max-width: 1200px) {
+                .make_up {
+                    margin-left: 35%;
+                }
+                .game {
+                    margin-left: 35%;
+                }
+                .love_text {
+                    margin-top: -8.5%;
+                }
+                .love_text p {
+                    font-size: 2rem;
+                }
+                .ouija {
+                    width: 45px;
+                    height: 45px;
+                }
+                .contact_me {
+                    right: 2%;
+                    margin-top: -10%;
+                }
+                .contact_me p {
+                    font-size: 1.8rem;
+                    margin-left: -30px;
+                }
+            }
             
             @media (max-width: 900px) {
                 .box {
@@ -317,38 +343,11 @@
                 }
             }
             
-            @media (max-width: 1200px) {
-                .home {
-                    margin-left: 35%;
-                }
-                .trickortreat {
-                    margin-left: 35%;
-                }
-                .love_text {
-                    margin-top: -8.5%;
-                }
-                .love_text p {
-                    font-size: 2rem;
-                }
-                .ouija {
-                    width: 45px;
-                    height: 45px;
-                }
-                .contact_me {
-                    right: 2%;
-                    margin-top: -10%;
-                }
-                .contact_me p {
-                    font-size: 1.8rem;
-                    margin-left: -30px;
-                }
-            }
-            
             @media (max-width: 840px) {
-                .home {
+                .make_up {
                     margin-left: 60%;
                 }
-                .trickortreat {
+                .game {
                     margin-left: 60%;
                 }
                 .love_text {
