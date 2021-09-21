@@ -327,7 +327,7 @@ main {
     }
     .text h1 {
         font-size: 1.5rem;
-        padding-top: 2rem;
+        padding-top: 1rem;
     }
     .box:nth-child(even) .pic {
         order: 2;
@@ -434,7 +434,7 @@ main {
     }
     .text h1 {
         font-size: 1.9rem;
-        padding-top: 2rem;
+        padding-top: 1rem;
     }
     .box:nth-child(even) .pic {
         order: 2;
@@ -551,7 +551,7 @@ main {
         justify-content: center;
     }
     .text p {
-        font-size: 2rem;
+        font-size: 1rem;
     }
     .love_text {
         left: 1%;
@@ -647,7 +647,7 @@ main {
     }
 }
 
-@media (min-width:427px) and (max-width:766px) {
+@media (min-width:700px) and (max-width:766px) {
     .l_web {
         width: 105px;
         height: 105px;
@@ -681,7 +681,6 @@ main {
     .home {
         width: 80%;
         height: 70vh;
-        border: 1px solid violet;
     }
     .make_up {
         width: 80%;
