@@ -310,19 +310,19 @@ main {
     }
     .home {
         width: 70%;
-        height: 35vh;
+        height: 50vh;
     }
     .make_up {
         width: 70%;
-        height: 35vh;
+        height: 50vh;
     }
     .trickortreat {
         width: 70%;
-        height: 35vh;
+        height: 50vh;
     }
     .game {
         width: 70%;
-        height: 35vh;
+        height: 50vh;
     }
     .text h1 {
         font-size: 1.5rem;
@@ -628,19 +628,19 @@ main {
     }
     .home {
         width: 70%;
-        height: 40vh;
+        height: 46vh;
     }
     .make_up {
         width: 70%;
-        height: 40vh;
+        height: 46vh;
     }
     .trickortreat {
         width: 70%;
-        height: 40vh;
+        height: 46vh;
     }
     .game {
         width: 70%;
-        height: 40vh;
+        height: 46vh;
     }
     .text h1 {
         font-size: 2.3rem;
@@ -707,20 +707,20 @@ main {
         padding-bottom: 4rem;
     }
     .home {
-        width: 80%;
-        height: 70vh;
+        width: 70%;
+        height: 90vh;
     }
     .make_up {
-        width: 80%;
-        height: 70vh;
+        width: 70%;
+        height: 90vh;
     }
     .trickortreat {
-        width: 80%;
-        height: 70vh;
+        width: 70%;
+        height: 90vh;
     }
     .game {
-        width: 80%;
-        height: 70vh;
+        width: 70%;
+        height: 90vh;
     }
     .text h1 {
         font-size: 3.5rem;
