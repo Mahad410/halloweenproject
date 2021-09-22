@@ -3,7 +3,8 @@
     padding: 0%;
     box-sizing: border-box;
     color: #fff;
-    font-family: 'Fleur De Leah';
+    /* font-family: 'Fleur De Leah'; */
+    font-family: 'Are You Serious';
     user-select: none;
 }
 
@@ -188,8 +189,6 @@ main {
 .text h1 {
     font-size: 4rem;
     padding-top: 3rem;
-    text-decoration: underline #fff;
-    text-decoration-style: double;
 }
 
 .box:nth-child(even) .pic {
