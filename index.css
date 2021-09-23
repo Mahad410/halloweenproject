@@ -326,9 +326,8 @@ main {
         height: 230px;
     }
     .text h1 {
-        font-size: 1.7rem;
+        font-size: 1.6rem;
         padding-top: 0;
-        font-weight: bolder;
     }
     .box:nth-child(even) .pic {
         order: 2;
@@ -434,7 +433,6 @@ main {
     .text h1 {
         font-size: 1.9rem;
         padding-top: 0;
-        font-weight: bolder;
     }
     .box:nth-child(even) .pic {
         order: 2;
@@ -447,7 +445,7 @@ main {
         justify-content: center;
     }
     .text p {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
     }
     .love_text {
         left: 1%;
