@@ -326,8 +326,9 @@ main {
         height: 230px;
     }
     .text h1 {
-        font-size: 1.9rem;
+        font-size: 1.7rem;
         padding-top: 0;
+        font-weight: bolder;
     }
     .box:nth-child(even) .pic {
         order: 2;
@@ -340,7 +341,7 @@ main {
         justify-content: center;
     }
     .text p {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
     .love_text {
         left: 1%;
@@ -431,8 +432,9 @@ main {
         height: 250px;
     }
     .text h1 {
-        font-size: 2.2rem;
+        font-size: 1.9rem;
         padding-top: 0;
+        font-weight: bolder;
     }
     .box:nth-child(even) .pic {
         order: 2;
@@ -445,7 +447,7 @@ main {
         justify-content: center;
     }
     .text p {
-        font-size: 1.7rem;
+        font-size: 1.4rem;
     }
     .love_text {
         left: 1%;
