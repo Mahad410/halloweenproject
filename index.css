@@ -4,7 +4,8 @@
     box-sizing: border-box;
     color: #fff;
     /* font-family: 'Fleur De Leah'; */
-    font-family: 'Are You Serious';
+    /* font-family: 'Are You Serious'; */
+    font-family: 'Creepster', cursive;
     user-select: none;
 }
 
@@ -231,14 +232,14 @@ main {
 
 .contact_me {
     position: absolute;
-    right: 3.5%;
+    right: 2%;
     margin-top: -10%;
 }
 
 .contact_me p {
     font-size: 1.5rem;
     font-weight: bolder;
-    margin-left: -8px;
+    margin-left: -16px;
     color: #000;
 }
 
