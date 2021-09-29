@@ -255,6 +255,20 @@ main {
     text-decoration-style: double;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #000;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ff5500;
+    border-radius: 28px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #bd3f00;
+}
+
 
 /* responsiveness */
 
