@@ -3,8 +3,6 @@
     padding: 0%;
     box-sizing: border-box;
     color: #fff;
-    /* font-family: 'Fleur De Leah'; */
-    /* font-family: 'Are You Serious'; */
     font-family: 'Creepster', cursive;
     user-select: none;
 }
@@ -31,7 +29,7 @@ main {
 }
 
 .l_web {
-    background: url(spiderweb.png);
+    background: url(spiderweb.webp);
     background-size: contain;
     background-repeat: no-repeat;
     width: 60px;
@@ -43,7 +41,7 @@ main {
 }
 
 .r_web {
-    background: url(spiderweb1.png);
+    background: url(spiderweb1.webp);
     background-size: contain;
     background-repeat: no-repeat;
     width: 80px;
@@ -66,7 +64,7 @@ main {
 }
 
 .spi {
-    background: url(spider.png);
+    background: url(spider.webp);
     background-repeat: no-repeat;
     background-size: contain;
     transform: translateX(-48%);
@@ -99,7 +97,7 @@ main {
 }
 
 .ba {
-    background: url(bat.png);
+    background: url(bat.webp);
     background-repeat: no-repeat;
     background-size: contain;
     transform: translateX(-48%);
@@ -131,7 +129,7 @@ main {
 }
 
 .pump {
-    background: url(pumpkin.png);
+    background: url(pumpkin.webp);
     background-repeat: no-repeat;
     background-size: contain;
     transform: translateX(-48%);
@@ -152,44 +150,32 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 3rem;
-    padding: 0 2rem;
+    padding: 1rem 2rem;
 }
 
-.home {
-    background: url(halloween.gif);
-    background-size: contain;
-    background-repeat: no-repeat;
+.home video {
     width: 400px;
     height: 400px;
 }
 
-.make_up {
-    background: url(makeup.gif);
-    background-size: contain;
-    background-repeat: no-repeat;
+.make_up video {
     width: 400px;
     height: 400px;
 }
 
-.trickortreat {
-    background: url(tricktreat.gif);
-    background-size: contain;
-    background-repeat: no-repeat;
+.trickortreat video {
     width: 400px;
     height: 400px;
 }
 
-.game {
-    background: url(games.gif);
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 400px;
+.game video {
+    width: 5=400px;
     height: 400px;
 }
 
 .text h1 {
     font-size: 4rem;
-    padding-top: 3rem;
+    padding-top: 5rem;
 }
 
 .box:nth-child(even) .pic {
@@ -274,8 +260,8 @@ main {
 
 @media (max-width:320px) {
     .l_web {
-        width: 40px;
-        height: 40px;
+        width: 35px;
+        height: 35px;
     }
     .r_web {
         width: 50px;
@@ -328,15 +314,15 @@ main {
         width: 230px;
         height: 230px;
     }
-    .make_up {
+    .make_up video {
         width: 230px;
         height: 230px;
     }
-    .trickortreat {
+    .trickortreat video {
         width: 230px;
         height: 230px;
     }
-    .game {
+    .game video {
         width: 230px;
         height: 230px;
     }
@@ -371,12 +357,12 @@ main {
 
 @media (min-width:326px) and (max-width:375px) {
     .l_web {
-        width: 48px;
-        height: 48px;
+        width: 35px;
+        height: 35px;
     }
     .r_web {
-        width: 50px;
-        height: 50px;
+        width: 35px;
+        height: 35px;
     }
     .line {
         width: 0.19rem;
@@ -433,15 +419,15 @@ main {
         width: 250px;
         height: 250px;
     }
-    .make_up {
+    .make_up video {
         width: 250px;
         height: 250px;
     }
-    .trickortreat {
+    .trickortreat video {
         width: 250px;
         height: 250px;
     }
-    .game {
+    .game video {
         width: 250px;
         height: 250px;
     }
@@ -476,12 +462,12 @@ main {
 
 @media (min-width:376px) and (max-width:425px) {
     .l_web {
-        width: 58px;
-        height: 58px;
+        width: 40px;
+        height: 40px;
     }
     .r_web {
-        width: 58px;
-        height: 58px;
+        width: 40px;
+        height: 40px;
     }
     .line {
         width: 0.19rem;
@@ -535,15 +521,15 @@ main {
         width: 300px;
         height: 300px;
     }
-    .make_up {
+    .make_up video {
         width: 300px;
         height: 300px;
     }
-    .trickortreat {
+    .trickortreat video {
         width: 300px;
         height: 300px;
     }
-    .game {
+    .game video {
         width: 300px;
         height: 300px;
     }
@@ -578,12 +564,12 @@ main {
 
 @media (min-width:426px) and (max-width:500px) {
     .l_web {
-        width: 58px;
-        height: 58px;
+        width: 50px;
+        height: 50px;
     }
     .r_web {
-        width: 58px;
-        height: 58px;
+        width: 50px;
+        height: 50px;
     }
     .line {
         width: 0.19rem;
@@ -637,15 +623,15 @@ main {
         width: 320px;
         height: 320px;
     }
-    .make_up {
+    .make_up video {
         width: 320px;
         height: 320px;
     }
-    .trickortreat {
+    .trickortreat video {
         width: 320px;
         height: 320px;
     }
-    .game {
+    .game video {
         width: 320px;
         height: 320px;
     }
@@ -680,12 +666,12 @@ main {
 
 @media (min-width:501px) and (max-width:768px) {
     .l_web {
-        width: 105px;
-        height: 105px;
+        width: 60px;
+        height: 60px;
     }
     .r_web {
-        width: 105px;
-        height: 105px;
+        width: 60px;
+        height: 60px;
     }
     .line {
         width: 0.19rem;
@@ -710,19 +696,19 @@ main {
         display: block;
         padding-bottom: 4rem;
     }
-    .home {
+    .home video {
         width: 380px;
         height: 380px;
     }
-    .make_up {
+    .make_up video {
         width: 380px;
         height: 380px;
     }
-    .trickortreat {
+    .trickortreat video {
         width: 380px;
         height: 380px;
     }
-    .game {
+    .game video {
         width: 380px;
         height: 380px;
     }
